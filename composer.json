@@ -1,5 +1,5 @@
 {
-	"name": "Primal/Database",
+	"name": "primal/database",
 	"description": "Collection of classes for managing database connections, performing queries and a simple table ORM",
 	"homepage": "http://github.com/PrimalPHP/Database",
 	"license": "MIT",
@@ -20,5 +20,10 @@
             "Primal\\Database": "lib\/",
 			"DB": "lib\/"
         }
-    }
+    },
+	"extra": {
+		"branch-alias": {
+			"dev-master": "1.0"
+		}
+	}
 }
