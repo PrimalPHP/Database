@@ -237,7 +237,7 @@ class Record extends \ArrayObject {
 			if ($field===null && !is_array($value)) {
 				if (empty($this->primary)) $this->_loadKeys();
 				if (empty($this->primary)) throw new RecordException("Can not load Record: No field specified and table lacks primary keys.",E_USER_ERROR);
-				$field = array_shift($this->primary);
+				$field = reset($this->primary);
 			}
 
 			//$value is not an array, so we're just performing a search on a single field.
